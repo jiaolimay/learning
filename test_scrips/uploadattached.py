@@ -7,12 +7,13 @@ import time
 import os
 
 driver = webdriver.Chrome()
-driver.get("https://mail.qq.com/cgi-bin/loginpage")
 driver.maximize_window()
+driver.get("https://mail.qq.com/cgi-bin/loginpage")
+
 time.sleep(2)
 driver.switch_to.frame('login_frame')
-driver.find_element_by_id('u').send_keys('XXX')
-driver.find_element_by_id('p').send_keys('XXX')
+driver.find_element_by_id('u').send_keys('xxx')
+driver.find_element_by_id('p').send_keys('xxx')
 time.sleep(2)
 driver.find_element_by_id('login_button').click()
 time.sleep(2)
@@ -32,4 +33,4 @@ python 中文件路径注意写法，存在转义字符的问题
 
 '''下面3行为第2种附件上传'''
 driver.find_element_by_id('AttachFrame').click()
-os.system("C:/Users/ml980245/Desktop/jmeter_test/qq_attach.exe")
+os.system("C:/Users/ml980245/PycharmProjects/learning/appendix/qq_attach.exe")
