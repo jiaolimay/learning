@@ -4,6 +4,8 @@ from com.common import id,js,css,xpath
 def login(driver,user,passwd):
     try:
         id(driver, 'nloginname').send_keys(user)
+
+
     except:
         print('no username')
     id(driver, 'npwd').send_keys(passwd)

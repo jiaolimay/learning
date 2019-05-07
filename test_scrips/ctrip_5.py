@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 from selenium import webdriver
-import time,os
+import time, os
 from com.login import login,search_car,train_type,train_book
 from com.excel_opera import read_excel
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__),p))

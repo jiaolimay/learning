@@ -5,13 +5,13 @@ def id(driver,ele):
     time.sleep(2)
     return driver.find_element_by_id(ele)
 
-def css(driver,element):
+def css(driver,ele):
     time.sleep(2)
-    return driver.find_element_by_css_selector(element)
+    return driver.find_element_by_css_selector(ele)
 
-def xpath(driver,element):
+def xpath(driver,ele):
     time.sleep(2)
-    return driver.find_element_by_xpath(element)
+    return driver.find_element_by_xpath(ele)
 
 def js(driver,value):
     # jsvalue = "document.getElementById('dateObj').value ="+"'"+value+"'"
