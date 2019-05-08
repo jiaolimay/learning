@@ -6,6 +6,8 @@ import csv
 path='C:\\Users\\ml980245\\PycharmProjects\\learning\\test_scrips\\By.py'
 print(path)
 print(os.getcwd()+'\\'+'By.py')
+print(os.getcwd()[:-6])
+print(os.getcwd()[0:3])
 print(os.listdir('C:\\Users\\ml980245\\PycharmProjects\\learning\\test_scrips')[1])
 '''
 
@@ -40,7 +42,7 @@ pathcsvw=os.getcwd()+'\\'+'test.csv'
 print(pathcsvw)
 f=open(pathcsvw,'w')
 w=csv.writer(f)
-dic={u'测试':1,u'软件':2,u'工具':3}
+dic={'测试':1,'软件':2,'工具':3}
 for key in dic:
     w.writerow([key,dic[key]])
 f.close()

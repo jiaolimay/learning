@@ -20,8 +20,8 @@ import xlwt
 
 '''write excel'''
 excel = xlwt.Workbook()
-sheet = excel.add_sheet(u'测试')
+sheet = excel.add_sheet('测试')
 sheet.write(0,0,'test1')
-sheet.write(0,1,u'张三')
+sheet.write(0,1,'张三')
 excel.save('D:\\pythontest.xls')
 
