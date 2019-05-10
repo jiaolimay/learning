@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*-
+# _*_ coding:utf_8 -*_
 from ddt import ddt,data,unpack
 import unittest
 import os
@@ -7,7 +7,7 @@ PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
 
 reportPath = PATH('../report/chromereport')
 
-
+'''setup and teardown 是每个testcase 都会运行一次'''
 @ddt
 class TestSe(unittest.TestCase):
     def setUp(self):

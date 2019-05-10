@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*-
+# _*_ coding:utf_8 -*_
 from com.common import id,js,css,xpath
 
 def login(driver,user,passwd):

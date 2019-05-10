@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*-
+# _*_ coding:utf_8 -*_
 import time
 
 def id(driver,ele):

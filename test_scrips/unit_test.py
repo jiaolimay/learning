@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*-
+# _*_ coding:utf_8 -*_
 from unittest import TestCase,TestSuite,TestLoader
 import unittest
 import HtmlTestRunner
