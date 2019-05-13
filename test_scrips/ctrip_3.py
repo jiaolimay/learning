@@ -1,10 +1,7 @@
 # _*_ coding:utf_8 -*_
 from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
 import time
-import os
-import com.common
-from com.common import js,id,css,xpath,login,search_car
+from POdesignerMode import login,search_car
 
 driver = webdriver.Chrome()
 driver.maximize_window()

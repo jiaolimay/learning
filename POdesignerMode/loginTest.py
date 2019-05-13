@@ -1,9 +1,18 @@
 # _*_ coding:utf-8 _*_
-import time, unittest,HtmlTestRunner,os
+import time, unittest
+from venv_learn.Lib import HTMLTestRunner
 from selenium import webdriver
+import POdesignerMode
 from POdesignerMode.LoginPage import loginPage
 from POdesignerMode.searchPage import searchPage
 from POdesignerMode.bookPage import book
+import sys
+import os
+
+print('sys,path: ',sys.path)
+sys.path.append('C:\\Users\\ml980245\\PycharmProjects\\learning\\POdesignerMode')
+sys.path.append('C:\\Users\\ml980245\\PycharmProjects\\learning')
+
 
 '''用classmethod装饰过，改写setUp 为 setUpClass tearDownClass 在所有case执行前后只执行一次setup和teardown '''
 class loginTest(unittest.TestCase):
@@ -42,12 +51,15 @@ if __name__ == '__main__':
     suite.addTest(loginTest('test_01'))
     suite.addTest(loginTest('test_02'))
     suite.addTest(loginTest('test_03'))
-    filepath = os.getcwd()+'\\'+'report.html'
-    print(filepath)
-    fp = open(filepath, 'w')
-    runner = HtmlTestRunner.HTMLTestRunner(stream=fp, output=os.getcwd(),report_title=u'自动化测试报告',report_name='report_name',descriptions=u'第一个python unittest')
+    print('current path is :', os.getcwd())
+    # filepath = os.getcwd()[:-14]
+    # filename = filepath+'report\\'+'report.html'
+    # print(filename)
+    fp = open('C:/Users/ml980245/PycharmProjects/learning/report/report.html', 'wb')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'自动化测试报告',description=u'第一个python unittest',verbosity=2)
     runner.run(suite)
     fp.close()
+
 
 
 

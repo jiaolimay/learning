@@ -1,8 +1,8 @@
 # _*_ coding:utf_8 -*_
 from selenium import webdriver
 import time, os
-from com.login import login,search_car,train_type,train_book
-from com.excel_opera import read_excel
+from POdesignerMode import login,search_car
+from POdesignerMode import read_excel
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__),p))
 
 excelpath = PATH('../appendix/testdata.xls')
