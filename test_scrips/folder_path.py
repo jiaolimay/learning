@@ -19,6 +19,12 @@ file.read([size])从文件读取指定的字节数，如果未给定或为负则
 # print(f.read())
 # print(f.readline())
 # print(f.readlines()[1])
+f=open('sut.info.txt ','r')
+lines = f.readlines()
+for line in lines:
+    '''以,分割，取第一个'''
+    print(line.split((',')[0]))
+f.close()
 
 '''文件操作写'''
 # f=open('C:\\Users\\ml980245\\PycharmProjects\\tt.txt','w')
@@ -45,4 +51,4 @@ w=csv.writer(f)
 dic={'测试':1,'软件':2,'工具':3}
 for key in dic:
     w.writerow([key,dic[key]])
-f.close()
+f.close() 

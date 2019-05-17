@@ -1,10 +1,7 @@
 # _*_ coding:utf_8 -*_
 from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
-import pytesseract
 from PIL import Image,ImageEnhance
 import time
-import os
 '''screenshot need pillow package'''
 
 driver = webdriver.Chrome()

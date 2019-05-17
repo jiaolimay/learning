@@ -1,5 +1,5 @@
 # _*_ coding:utf_8 -*_
-from POdesignerMode import id,js,css,xpath
+from com.common import id,js,css,xpath
 
 def login(driver,user,passwd):
     try:

@@ -1,7 +1,7 @@
 # _*_ coding:utf_8 -*_
 from selenium import webdriver
 import time
-from POdesignerMode import login
+from com.login import login
 
 driver = webdriver.Chrome()
 driver.maximize_window()
