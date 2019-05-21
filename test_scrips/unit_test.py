@@ -1,6 +1,6 @@
 # _*_ coding:utf_8 -*_
-from unittest import TestCase,TestSuite,TestLoader
-import unittest
+from unittest_t import TestCase,TestSuite,TestLoader
+import unittest_t
 import HtmlTestRunner
 import os
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__),p))
@@ -25,7 +25,7 @@ class test_se(TestCase):
 
 
 if __name__ == '__main__':
-    # unittest.main()
+    # unittest_t.main()
     '''
     suite = TestSuite()
     suite.addTest(test_se('test_01'))
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     '''
     test_dir = PATH('../test_scrips')
     print('test_dir is :' , test_dir)
-    tests = unittest.defaultTestLoader.discover(test_dir,pattern='unit_*.py')
+    tests = unittest_t.defaultTestLoader.discover(test_dir, pattern='unit_*.py')
     print('report path is : ',reportPath)
     # fp = open(reportPath,'wb')
     runner = HtmlTestRunner.HTMLTestRunner(output=reportPath,report_title='automatically test report')

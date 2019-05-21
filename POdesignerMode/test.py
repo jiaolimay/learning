@@ -1,11 +1,11 @@
 # _*_ coding:utf-8 _*_
 # _*_ coding:utf-8 _*_
-import time, unittest
+import time, unittest_t
 from selenium import webdriver
 from POdesignerMode.LoginPage import loginPage
 from POdesignerMode.searchPage import searchPage
 
-class loginTest(unittest.TestCase):
+class loginTest(unittest_t.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
@@ -29,4 +29,4 @@ class loginTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest_t.main()

@@ -2,6 +2,12 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/POdesignerMode/51zxw" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoTest_project" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoTest_project/driver" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoTest_project/Website" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AutoTest_project/Website/test_case" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv_learn" />
       <excludeFolder url="file://$MODULE_DIR$/venv_may" />
     </content>

@@ -5,19 +5,15 @@ class base():
         self.driver = driver
     #id
     def by_id(self,ele):
-        time.sleep(2)
         return self.driver.find_element_by_id(ele)
     #name
     def by_name(self,ele):
-        time.sleep(2)
         return self.driver.find_element_by_name(ele)
     #css
     def by_css(self,ele):
-        time.sleep(2)
         return self.driver.find_element_by_css_selector(ele)
     #xpath
     def by_xpath(self,ele):
-        time.sleep(2)
         return self.driver.find_element_by_xpath(ele)
     #url
     def driver_url(self):

@@ -2,7 +2,6 @@
 import time, unittest
 from venv_learn.Lib import HTMLTestRunner
 from selenium import webdriver
-import POdesignerMode
 from POdesignerMode.LoginPage import loginPage
 from POdesignerMode.searchPage import searchPage
 from POdesignerMode.bookPage import book
@@ -19,6 +18,7 @@ class loginTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = webdriver.Chrome()
+        cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
         cls.driver.get("https://passport.ctrip.com/user/login?")
 
@@ -46,7 +46,7 @@ class loginTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    # unittest.main()
+    # unittest_t.main()
     suite = unittest.TestSuite()
     suite.addTest(loginTest('test_01'))
     suite.addTest(loginTest('test_02'))
@@ -55,8 +55,9 @@ if __name__ == '__main__':
     # filepath = os.getcwd()[:-14]
     # filename = filepath+'report\\'+'report.html'
     # print(filename)
+    # with open(filename,'wb') as fp:
     fp = open('C:/Users/ml980245/PycharmProjects/learning/report/report.html', 'wb')
-    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'自动化测试报告',description=u'第一个python unittest',verbosity=2)
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'自动化测试报告',description=u'第一个python unittest_t',verbosity=2)
     runner.run(suite)
     fp.close()
 
