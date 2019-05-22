@@ -30,11 +30,11 @@ def send_mail(latest_report):
 
     smtpserver = 'smtp.163.com'
 
-    user = 'xiaoyuan199058@163.com'
-    password = '13679125394abc'  # 根据自己邮箱密码来设置
+    user = 'xxxx@163.com'
+    password = 'xxx'  # 根据自己邮箱密码来设置
 
-    sender = 'xiaoyuan199058@163.com'
-    receives = ['may.li@mcon-group.com', '']
+    sender = 'xxxx'
+    receives = ['xxx.com', '']
 
     subject = 'Web Selenium 自动化测试报告'
 

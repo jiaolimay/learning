@@ -26,8 +26,7 @@ class LoginPage(Page):
         self.type_password(password)
         self.type_submit()
 
-    loginPass_loc=(By.LINK_TEXT,'我的空间')
-    loginFail_loc=(By.NAME,'username')
+
 
     def type_loginPass_hint(self):
         return self.find_element(*self.loginPass_loc).text
